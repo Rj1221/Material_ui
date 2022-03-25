@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import "./styles/App.css";
+import * as React from "react";
+import { Container, Typography, Button, Paper, Box } from '@mui/material';
+function App ()
+{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="sm">
+      <Paper square elevation={10}>
+        <Box p={ 2 }>
+          <Typography variant="h4">Read Docs</Typography>
+          <Typography variant="subtitle1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quas possimus magni corrupti recusandae dolor fugit sequi eius dignissimos modi aliquam tempora natus accusantium reiciendis quidem! Neque amet vitae adipisci.
+          </Typography>
+          <Button variant="contained" sx={{color:"#ffff",backgroundColor:"#f50057"}}>Learn More</Button>
+        </Box>
+      </Paper>
+
+    </Container >
   );
 }
-
+// Note :- Elevation is used to increase box shadow
 export default App;
